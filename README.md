@@ -102,3 +102,4 @@ export default class JsonController extends BaseController {
 - https://deno.land/std/path/mod.ts
 
 ## Thank you!
+[Nauval](https://github.com/nauvalazhar)
