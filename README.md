@@ -96,4 +96,9 @@ export default class JsonController extends BaseController {
 }
 ```
 
+## Standard Library Used
+- https://deno.land/std@0.50.0/http/server.ts
+- https://deno.land/std/flags/mod.ts
+- https://deno.land/std/path/mod.ts
+
 ## Thank you!
