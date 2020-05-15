@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About</title>
+</head>
+<body>
+	<h1>About</h1>
+	<p>This is the about page. This paragraph is written inside the HTML file.</p>
+	<pre id="output">Fetching data from <code>/json</code> route.</pre>
+
+	<p><b>Sitemap</b></p>
+	<ul>
+		<li><a href="/">Index Page</a></li>
+		<li><a href="/about">About Page</a></li>
+		<li><a href="/json">Example JSON Response</a></li>
+	</ul>
+
+	<script>
+		fetch('/json')
+		.then(res => res.text())
+		.then(res => {
+			document.getElementById('output').innerHTML = res;
+		});
+	</script>
+</body>
+</html>
